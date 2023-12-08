@@ -1,0 +1,39 @@
+{
+    "name": "wirke/composer-rest-v",
+    "description": "communicate the composer version out via a rest endpoint",
+    "keywords": ["Blade", "Bootstrap Icons", "Laravel"],
+    "homepage": "https://github.com/wwwirke/select-blade-icons",
+    "license": "MIT",
+    "authors": [{
+        "name": "Filip Wessman",
+        "email": "filip@wirke.se",
+        "homepage": "https://wirke.se/",
+        "role": "Developer"
+    }],
+    "require": {
+    },
+    "require-dev": {
+    },
+    "autoload": {
+        "psr-4": {
+            "Wirke\\ComposerRestV\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Wirke\\ComposerRestV\\": "src/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Wirke\\ComposerRestV\\ComposerRestVServiceProvider"
+            ]
+        }
+    },
+    "config": {
+        "sort-packages": true
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true
+}
