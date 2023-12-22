@@ -18,7 +18,12 @@ class ComposerRestVServiceProvider extends ServiceProvider
                     foreach ($json->packages as $package) {
                         $output->{$package->name} = $package->version;
                     }
-                    return $output;
+                    $response = [
+                        'code' => 'success',
+                        'message' => 'Versions fetched successfully',
+                        'data' => $output,
+                    ];
+                    return $response;
                 },
                 'permission_callback' => '__return_true',
             ]);
